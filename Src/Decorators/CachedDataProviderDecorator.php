@@ -33,7 +33,7 @@ class CachedDataProviderDecorator extends BaseDataProviderDecorator
 
     /**
      * {@inheritdoc}
-     */g
+     */
     public function get(array $request)
     {
         try {
