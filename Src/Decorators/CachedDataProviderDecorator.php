@@ -1,22 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tomarov1-iv
- * Date: 27.09.2018
- * Time: 15:44
- */
 
-namespace src\integration;
+namespace Src\Decorators;
 
 
 use DateTime;
 use Exception;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Log\LoggerInterface;
-use src\decorators\BaseDataProviderDecorator;
-use src\interfaces\DataProvider;
+use Src\Decorators\BaseDataProviderDecorator;
+use Src\Interfaces\DataProvider;
 
-class CachedBaseDataProviderDecorators extends BaseDataProviderDecorator
+class CachedDataProviderDecorator extends BaseDataProviderDecorator
 {
 
     public $cache;
@@ -29,20 +23,16 @@ class CachedBaseDataProviderDecorators extends BaseDataProviderDecorator
      * @internal param string $user
      * @internal param string $password
      */
-    public function __construct(DataProvider $dataProvider, CacheItemPoolInterface $cache)
+    public function __construct(DataProvider $dataProvider, CacheItemPoolInterface $cache, LoggerInterface $logger)
     {
         parent::__construct($dataProvider);
         $this->cache = $cache;
-    }
-
-    public function setLogger(LoggerInterface $logger)
-    {
         $this->logger = $logger;
     }
 
     /**
      * {@inheritdoc}
-     */
+     */g
     public function get(array $request)
     {
         try {

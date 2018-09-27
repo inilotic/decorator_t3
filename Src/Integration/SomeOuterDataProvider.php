@@ -1,12 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tomarov1-iv
- * Date: 27.09.2018
- * Time: 15:35
- */
 
-namespace src\integration;
+
+namespace Src\Integration;
 
 
 use src\interfaces\DataProvider;

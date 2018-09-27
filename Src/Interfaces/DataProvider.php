@@ -1,6 +1,6 @@
 <?php
 
-namespace src\interfaces;
+namespace Src\Interfaces;
 
 /**
  * Base interface for data providers

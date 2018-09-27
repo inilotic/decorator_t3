@@ -1,14 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tomarov1-iv
- * Date: 27.09.2018
- * Time: 15:40
- */
 
-namespace src\decorators;
+namespace Src\Decorators;
 
-use src\interfaces\DataProvider;
+use Src\Interfaces\DataProvider;
 
 /**
  * Base decorator for any data provider
