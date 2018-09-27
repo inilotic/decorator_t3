@@ -19,6 +19,7 @@ class CachedDataProviderDecorator extends BaseDataProviderDecorator
     /**
      * @param DataProvider $dataProvider
      * @param CacheItemPoolInterface $cache
+     * @param LoggerInterface $logger
      * @internal param string $host
      * @internal param string $user
      * @internal param string $password
